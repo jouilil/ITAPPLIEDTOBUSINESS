@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Algorithms &#8212; HEM, Rabat    Prof. Jouilil Youness</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Table of truth" href="chap12.html" />
+    <link rel="prev" title="CHAPTER 1 : FUNDAMENTAL CONCEPTS" href="chap1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logos.JPG" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">HEM, Rabat    Prof. Jouilil Youness</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="chap1.html">
+   CHAPTER 1 : FUNDAMENTAL CONCEPTS
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Introduction to Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap12.html">
+     Table of truth
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap13.html">
+     PRACTICE EXERCISES
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/chap11.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchap11.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-s-an-algorithm">
+   1.  What’s an algorithm ?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#algorithmics-vs-algorithm">
+   2.  Algorithmics vs Algorithm
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#algorithm-vs-program">
+   3. Algorithm vs program
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#steps-of-an-algorithm">
+   4. Steps of an Algorithm
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introduction to Algorithms</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-s-an-algorithm">
+   1.  What’s an algorithm ?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#algorithmics-vs-algorithm">
+   2.  Algorithmics vs Algorithm
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#algorithm-vs-program">
+   3. Algorithm vs program
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#steps-of-an-algorithm">
+   4. Steps of an Algorithm
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-algorithms">
+<h1>Introduction to Algorithms<a class="headerlink" href="#introduction-to-algorithms" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="what-s-an-algorithm">
+<h2>1.  What’s an algorithm ?<a class="headerlink" href="#what-s-an-algorithm" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title"><font color='blue'>Algorithmics</font></p>
+<p><strong>Algorithmics</strong> refers to the discipline that studies algorithms and their applications in computer science.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title"><font color='blue'> Algorithm </font></p>
+<p><strong>An algorithm</strong> is any well-deûned computational procedure that takes some value,
+or set of values, as input and produces some value, or set of values, as output in a
+ûnite amount of time. An algorithm is thus a sequence of computational steps that
+transform the input into the output.</p>
+</div>
+</div>
+<div class="section" id="algorithmics-vs-algorithm">
+<h2>2.  Algorithmics vs Algorithm<a class="headerlink" href="#algorithmics-vs-algorithm" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title"><font color='blue'>Algorithmics vs Algorithm</font></p>
+<ul class="simple">
+<li><p><strong>Algorithm</strong>: A specific procedure or set of instructions for solving a problem.</p></li>
+<li><p><strong>Algorithmics</strong>: The field of study that focuses on the design, analysis, and optimization of algorithms.</p></li>
+</ul>
+</div>
+<div class="tip admonition">
+<p class="admonition-title"><font color='blue'>Examples of Algorithms</font></p>
+<ul class="simple">
+<li><p>Weather prediction algorithm</p></li>
+<li><p>Traffic light control algorithm</p></li>
+<li><p>Sorting and Searching Algorithms</p></li>
+<li><p>Machine Learning and AI Algorithms</p></li>
+<li><p>Spam filtering algorithm (used in email services)</p></li>
+<li><p>Face recognition algorithm (used in security systems)</p></li>
+<li><p>Speech recognition algorithm (used in virtual assistants)</p></li>
+<li><p>Fraud detection algorithm (used in banking)</p></li>
+<li><p>Recommendation system algorithm (used in Netflix, YouTube)</p></li>
+</ul>
+<p>An algorithm can be, for example, a cooking recipe:</p>
+<ul class="simple">
+<li><p>Ingredients</p></li>
+<li><p>Follow a recipe</p></li>
+<li><p>Final dish</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="algorithm-vs-program">
+<h2>3. Algorithm vs program<a class="headerlink" href="#algorithm-vs-program" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition-algorithm-vs-program admonition">
+<p class="admonition-title">algorithm vs program</p>
+<p><strong>An algorithm</strong> is a general procedure or logical sequence for solving a problem.</p>
+<p><strong>A program</strong> is the actual implementation of an algorithm in a programming language that a computer can execute.</p>
+</div>
+<p><strong>Example</strong> : Here is an algorithm/a Python program that asks the user to enter a number and then calculates its double:</p>
+<p><strong>Algorithm</strong>: Calculate Double of a Number</p>
+<ul class="simple">
+<li><p>Step 01 : Start</p></li>
+<li><p>Step 02 : Prompt the user to enter a number</p></li>
+<li><p>Step 03 : Read the number</p></li>
+<li><p>Step 04 : Compute the double of the number (result = number × 2)</p></li>
+<li><p>Step 05 : Display the result</p></li>
+<li><p>Step 06 : End</p></li>
+</ul>
+<p><strong>Program</strong> : Calculate Double of a Number</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ask the user to enter a number</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Calculate the double</span>
+<span class="n">double_num</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">2</span>
+
+<span class="c1"># Display the result</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The double of&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="n">double_num</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Example 02 :</strong> Here is an algorithm/a program that asks the user to enter their age and then determines whether they are a minor or an adult.</p>
+<p><strong>Algorithm: Check Majority</strong></p>
+<ul class="simple">
+<li><p>Step 01 : Start</p></li>
+<li><p>Step 02 : Ask the user to enter their age</p></li>
+<li><p>Step 03 : Read the age</p></li>
+<li><p>Step 04 : If the age is greater than or equal to 18, display « You are an adult ». Otherwise, display « You are a minor »</p></li>
+<li><p>Step 05 : End</p></li>
+</ul>
+<p><strong>Program: Check Majority</strong></p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your age: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Check if the user is a minor or an adult</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You are an adult.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You are a minor.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Example of an algorithm</strong> : To determine the largest number in a given list, the following steps are followed:</p>
+<ol class="simple">
+<li><p>Start with the first number.</p></li>
+<li><p>Compare with the next number.</p></li>
+<li><p>Keep the largest and continue until the end.</p></li>
+<li><p>Output the largest number.</p></li>
+</ol>
+<p><strong>Examples of a program</strong> : Below is a Python implementation of the algorithm:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Key difference :</strong></p>
+<p><strong>An algorithm</strong> is language-independent, whereas a program depends on a specific programming language. An algorithm outlines the logic, while a program translates that logic into executable code.</p>
+<p><strong>An algorithm</strong> cannot be run directly, but a program can be executed by a computer.</p>
+</div>
+<div class="section" id="steps-of-an-algorithm">
+<h2>4. Steps of an Algorithm<a class="headerlink" href="#steps-of-an-algorithm" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title"><font color='blue'> Steps of an Algorithm </font></p>
+<ul class="simple">
+<li><p><strong>Inputs</strong>: This step involves identifying the necessary data required to solve the problem.</p></li>
+<li><p><strong>Processing</strong>: This step determines how the input data is transformed to produce the desired results.</p></li>
+<li><p><strong>Outputs</strong>: Displaying the results. This can include showing numerical values, generating reports, creating graphs, or any other form of presenting the results that helps the user understand the conclusions of the algorithm.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="chap1.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">CHAPTER 1 : FUNDAMENTAL CONCEPTS</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="chap12.html" title="suivant page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Table of truth</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par Prof. Jouilil Youness<br/>
+    
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
