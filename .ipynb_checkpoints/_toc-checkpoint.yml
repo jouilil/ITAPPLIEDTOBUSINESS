@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+# jb build book/ --builder latex for latex
+format: jb-article
+root: intro
+sections:
+- file: chap1
+  sections:
+  - file: chap11
+  - file: chap12
+  - file: chap13
+- file: chap2

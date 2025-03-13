@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eléments théoriques &#8212; HEM, Rabat    Prof. Jouilil Youness</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Tableaux et représentations graphiques" href="chap52.html" />
+    <link rel="prev" title="Python pour la Data Visualisation unidimensionnelle" href="Chapitre5.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logos.JPG" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">HEM, Rabat    Prof. Jouilil Youness</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="chap1.html">
+   RETURNING TO FUNDAMENTAL CONCEPTS
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap11.html">
+     Introduction to Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap12.html">
+     Variables et opérations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap13.html">
+     Tuples en Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap14.html">
+     Manipulation de listes en Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap15.html">
+     Les dictionnaires en Python
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="Chapitre5.html">
+   Python pour la Data Visualisation unidimensionnelle
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Eléments théoriques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap52.html">
+     Tableaux et représentations graphiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap522.html">
+     Caractéristiques de Tendance Centrale
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap523.html">
+     Les paramètres de dispersion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap53.html">
+     La dataviz avec Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap54.html">
+     Exercices d’application
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Chapitre6.html">
+   Vision bidimensionnelle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap61.html">
+     Clustering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chap62.html">
+     K-means
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Chapitre7.html">
+   Visualisation Interactive avec Plotly
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Chapitre8.html">
+   Cartographie et Visualisation Géospatiale
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Chapitre9.html">
+   Etudes de cas
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/chap51.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchap51.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#differents-types-de-donnees">
+   1. Différents types de données
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#types-de-variables">
+   2. Types de variables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#axes-de-donnees">
+   3. Axes de données
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bonne-pratiques">
+   6. Bonne pratiques
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Eléments théoriques</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#differents-types-de-donnees">
+   1. Différents types de données
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#types-de-variables">
+   2. Types de variables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#axes-de-donnees">
+   3. Axes de données
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bonne-pratiques">
+   6. Bonne pratiques
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="elements-theoriques">
+<h1>Eléments théoriques<a class="headerlink" href="#elements-theoriques" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="differents-types-de-donnees">
+<h2>1. Différents types de données<a class="headerlink" href="#differents-types-de-donnees" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les données peuvent se présenter sous des formes variées, et chaque type de données requiert des méthodes spécifiques de représentation graphique afin de faciliter leur analyse et leur interprétation. Voici une description détaillée de ces catégories :</p>
+<div class="admonition-types-de-donnees admonition">
+<p class="admonition-title">Types de données</p>
+<ul class="simple">
+<li><p>Données structurées :</p></li>
+</ul>
+<p>Les données structurées sont organisées selon un format précis, ce qui les rend facilement exploitables par des outils d’analyse. Ces données incluent, par exemple, les résultats de sondages, des fichiers contenant des notes académiques, ou encore des listes de préférences. Leur structure permet une représentation claire sous forme de tableaux, de diagrammes ou d’histogrammes, ce qui facilite l’identification de tendances ou de relations.</p>
+<ul class="simple">
+<li><p>Séries temporelles:</p></li>
+</ul>
+<p>Les séries temporelles concernent des données collectées ou observées sur une période donnée, permettant d’étudier l’évolution de phénomènes dans le temps. Par exemple, l’analyse de la variation de la température moyenne terrestre, des fluctuations des marchés financiers ou encore du nombre hebdomadaire de cas de grippe repose sur ce type de données. Les graphiques en courbes, les diagrammes de tendances et les visualisations dynamiques sont souvent utilisés pour en saisir les évolutions et les patterns.</p>
+<ul class="simple">
+<li><p>Données géographiques :</p></li>
+</ul>
+<p>Ces données décrivent des phénomènes localisés dans l’espace et sont souvent associées à des coordonnées géographiques. Elles permettent de cartographier des phénomènes tels que la répartition des espèces végétales dans différentes régions, l’indice de pauvreté au niveau mondial ou encore la position d’un téléphone portable à un moment donné. La cartographie thématique, les diagrammes en couches et les systèmes d’information géographique (SIG) constituent des outils privilégiés pour leur analyse.</p>
+<ul class="simple">
+<li><p>Données non structurées:</p></li>
+</ul>
+<p>Contrairement aux données structurées, les données non structurées n’ont pas de format standard ou organisé. Elles incluent, par exemple, des contenus textuels, des images, des vidéos ou des enregistrements audio. Ces données nécessitent des techniques avancées, telles que l’analyse textuelle, la reconnaissance d’images ou encore l’apprentissage automatique, pour en extraire des informations exploitables. Leur représentation graphique peut inclure des nuages de mots, des diagrammes d’association ou des visualisations basées sur des modèles d’apprentissage.</p>
+</div>
+</div>
+<div class="section" id="types-de-variables">
+<h2>2. Types de variables<a class="headerlink" href="#types-de-variables" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Il existe de nombreux types de données dans Python. Voici quelques-uns les plus basiques :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">float</span></code>: Les valeurs décimales (ou en virgule flottante) telles que 10,15 (attention en utilise <code class="docutils literal notranslate"><span class="pre">.</span></code> comme décimal au lieu de <code class="docutils literal notranslate"><span class="pre">,</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int</span></code> (les nombres entiers) : les valeurs comme 8; 4; 10 sont des entiers (<code class="docutils literal notranslate"><span class="pre">int</span></code>). Les entiers font aussi partie des valeurs numériques.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> (les valeurs booléennes) : <code class="docutils literal notranslate"><span class="pre">True</span></code> ou <code class="docutils literal notranslate"><span class="pre">False</span></code> sont dites valeurs logiques.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">str</span></code> (les caractères, ou chaînes de caractères). Les guillemets « texte » (ou encore les apostrophes “texte”) indiquent que texte est de type <code class="docutils literal notranslate"><span class="pre">str</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">complex</span></code> (les nombre complexes): sont les nombres contenant une partie réelle et une partie imaginaire. En mathématiques, on note  le nombre complexe dans le carrée est égale à 1. Cependant, en Python, on utilise la lettre <code class="docutils literal notranslate"><span class="pre">j</span></code> (ou <code class="docutils literal notranslate"><span class="pre">J</span></code>) pour indiquer ce nombre. Par exemple, si on voulait écrire le nombre 3+1.5<code class="docutils literal notranslate"><span class="pre">i</span></code> (le nombre complexe dont la partie réelle est 3 et la partie imaginaire est 1.5) en python on écrit 3 + 1.5<code class="docutils literal notranslate"><span class="pre">j</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: type Le mot-clé None est utilisé pour définir une valeur nulle (pas 0), ou aucune valeur du tout. None n’est pas la même chose que 0, <code class="docutils literal notranslate"><span class="pre">False</span></code> ou une chaîne vide “”. None est un type de données en soi (NoneType) et la seule valeur qui peut être de type <code class="docutils literal notranslate"><span class="pre">None</span></code> est le mot-clé None.</p></li>
+</ul>
+<p>si nous avons un variable (ou même une valeur) et nous voulons savoir son type de données, on utilise la fonction type. Il faut être prudent lorsqu’on voulait faire des opérations sur des variables si leur type n’est le même!</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># cette instruction va afficher int</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="c1"># cette instruction va afficher float</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">1.5</span><span class="p">))</span>
+
+<span class="c1"># cette instruction va afficher  bool</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">True</span><span class="p">))</span>
+<span class="c1"># cette instruction va afficher str</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;bonjour&quot;</span><span class="p">))</span>
+
+<span class="c1"># cette instruction va afficher complex</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mf">17.89</span><span class="n">j</span><span class="p">))</span>
+
+<span class="c1"># cette instruction va afficher NoneType</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">None</span><span class="p">))</span>
+
+</pre></div>
+</div>
+<p>Affichage après exécution :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;int&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+&lt;class &#39;bool&#39;&gt;
+&lt;class &#39;str&#39;&gt;
+&lt;class &#39;complex&#39;&gt;
+&lt;class &#39;NoneType&#39;&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="axes-de-donnees">
+<h2>3. Axes de données<a class="headerlink" href="#axes-de-donnees" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les données peuvent être classées selon leurs dimensions, chacune nécessitant des axes spécifiques pour leur visualisation.</p>
+<div class="admonition-axes-de-donnees admonition">
+<p class="admonition-title">Axes de données</p>
+<p><strong>Les données unidimensionnelles  (1D)</strong>: Elles se concentrent sur une seule variable et peuvent être représentées sur un axe linéaire.</p>
+<ul class="simple">
+<li><p>La répartition des âges dans une population : représentée par un histogramme pour montrer la fréquence des différentes tranches d’âge.</p></li>
+<li><p>Les résultats d’un examen pour une classe : affichés sous forme d’un graphique en barres où chaque barre représente une note et sa fréquence.</p></li>
+<li><p>Le nombre de visiteurs dans un musée sur une journée : visualisé par un diagramme en bâtons.</p></li>
+</ul>
+<p><strong>Données temporelles</strong> : Les données temporelles, bien qu’unidimensionnelles dans leur nature, évoluent dans le temps. Elles utilisent un axe temporel pour montrer l’évolution ou les tendances.</p>
+<ul class="simple">
+<li><p>L’évolution du prix du pétrole sur une année : illustrée par un graphique en courbes pour montrer les fluctuations mensuelles.</p></li>
+<li><p>Le suivi des températures quotidiennes dans une ville : représenté par une courbe qui met en évidence les variations journalières.</p></li>
+<li><p>Les ventes trimestrielles d’une entreprise : affichées sur un graphique de tendances pour analyser les performances commerciales.</p></li>
+<li><p>Les pics d’affluence dans les transports publics : représentés par un graphique en aires pour visualiser les périodes de forte fréquentation.</p></li>
+</ul>
+<p><strong>Données bidimensionnelles (2D)</strong> : Les données bidimensionnelles mettent en relation deux variables sur un plan cartésien ou une carte.</p>
+<ul class="simple">
+<li><p>La relation entre l’âge et le revenu d’un groupe de personnes : visualisée par un graphique de dispersion pour identifier des corrélations.</p></li>
+<li><p>La répartition des écoles dans une région : représentée sur une carte géographique avec des points localisant chaque établissement.</p></li>
+<li><p>La consommation énergétique en fonction de la température extérieure : illustrée par un graphique en lignes croisées.</p></li>
+<li><p>Une carte montrant le taux de vaccination par région : représentée par une carte thématique avec des zones colorées selon le pourcentage de vaccination.</p></li>
+</ul>
+<p><strong>Données tridimensionnelles (3D)</strong>  Elles ajoutent une profondeur supplémentaire, permettant de visualiser simultanément trois variables.</p>
+<ul class="simple">
+<li><p>La topographie d’un territoire : représentée par une carte en relief ou un graphique de surface en 3D montrant les variations d’altitude.</p></li>
+<li><p>La variation de la température, de l’humidité et de la pression atmosphérique dans une région : affichée sur un diagramme en 3D pour analyser les interactions entre ces variables.</p></li>
+<li><p>L’analyse des ventes par produit, par région et par période : visualisée par un histogramme 3D où chaque dimension représente une variable.</p></li>
+<li><p>Les trajectoires des vols aériens : illustrées sur une carte en 3D montrant les altitudes et les itinéraires.</p></li>
+</ul>
+<p><strong>Données arborescentes et graphes</strong> : Ces données illustrent des relations hiérarchiques ou des réseaux complexes.</p>
+<ul class="simple">
+<li><p>Un arbre généalogique : représenté sous forme d’arborescence montrant les relations familiales entre individus.</p></li>
+<li><p>La hiérarchie d’une entreprise : visualisée par un organigramme indiquant les liens entre les différents départements et postes.</p></li>
+<li><p>Les connexions entre utilisateurs d’un réseau social : représentées par un graphe où chaque nœud correspond à un individu et chaque lien montre une interaction.</p></li>
+<li><p>L’analyse des flux logistiques d’une entreprise : illustrée par un diagramme en arbre pour montrer les chemins empruntés par les produits, de la production à la distribution.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="bonne-pratiques">
+<h2>6. Bonne pratiques<a class="headerlink" href="#bonne-pratiques" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition-bonne-pratiques admonition">
+<p class="admonition-title">Bonne pratiques</p>
+<p><strong>Comment choisir le graphique adapté à chaque type de données ?</strong></p>
+<p><strong>Quelles sont les pièges à éviter ?</strong></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Chapitre5.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">Python pour la Data Visualisation unidimensionnelle</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="chap52.html" title="suivant page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Tableaux et représentations graphiques</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par Prof. Jouilil Youness<br/>
+    
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
